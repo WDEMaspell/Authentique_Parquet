@@ -115,15 +115,23 @@ Project:
    Uri: 'urn:FTOptix:CODESYS:Net'
    Module: FTOptix.CODESYS.Net
    Version: 2.0
+  29:
+   Uri: 'urn:FTOptix:DataLogger'
+   Module: FTOptix.DataLogger
+   Version: 1.0
+  30:
+   Uri: 'urn:FTOptix:DataLogger:Net'
+   Module: FTOptix.DataLogger.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 4166
-  Objects: 612
+  TotalNodeCount: 4302
+  Objects: 625
   ObjectTypes: 12
-  Variables: 3533
+  Variables: 3656
   VariableTypes: 0
   DataTypes: 0
   Methods: 9
-  References: 151
+  References: 161
   ReferenceTypes: 0
   Files: 37
  Nodes:
