@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [211,6],
+    "Dimensions": [231,6],
     "Body": [
      "","en-US","it-IT","fr-FR","nl-BE","es-ES",
      "Password","Password","Password","Mot de passe","","",
@@ -181,7 +181,7 @@ Children:
      "Program :","Program :","Programma:","Program :","","",
      "Quality check:","Quality check:","Controllo qualità:","","","",
      "Rack exchange:","Rack exchange:","Cambio rack:","","","",
-     "Save","Save","Salva","Sauvegarde","","",
+     "Save","Save","Salva","Sauvegarde","","Guardar",
      "Small","Small","Piccola","","","",
      "Speed:","Speed:","Velocità:","","","",
      "Start delay:","Start delay:","Ritardo avvio:","","","",
@@ -221,6 +221,26 @@ Children:
      "Time. Set :","Time Set :","Set Tempo:","Régler le temps:","","",
      "VACUUM PUMP","VACUUM PUMP","POMPA VUOTO","POMPE À VIDE","","",
      "Wood group","Wood group","Gruppo legno","Groupe de bois","","",
-     "Wood:","Wood:","Legno:","Bois:","",""
+     "Wood:","Wood:","Legno:","Bois:","","",
+     "RecipeControllerRecipe","Recipe","Ricetta","Recette","","Receta",
+     "RecipesEditorNotSet","is not set","non è impostato","n'est pas défini","","no está establecido",
+     "Delete","Delete","Elimina","Supprimer","","Eliminar",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","EditModel dello schema","EditModel du schéma","","EditModel del esquema",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","Il nome della ricetta è vuoto","Le nom de la recette est vide","","El nombre de la receta está vacío",
+     "RecipeControllerCreatedAndSaved","created and saved","creata e salvata","créé et enregistré","","creados y guardados",
+     "Load","Load","Carica","Charger","","Cargar",
+     "Apply","Apply","Applica","Appliquer","","Aplicar",
+     "RecipesEditorNotFound","not found","non trovato","introuvable","","no encontrado",
+     "RecipeControllerDeleted","deleted","eliminata","supprimé","","eliminados",
+     "RecipeControllerRecipeApplied","Recipe applied","Ricetta applicata","Recette appliquée","","Receta aplicada",
+     "RecipeControllerSaved","saved","salvata","enregistré","","guardado",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","Variabile RecipeSchema non trovata","Variable RecipeSchema introuvable","","No se ha encontrado la variable de RecipeSchema",
+     "RecipesEditorStoreOfSchema","Store of schema","L'archivio dello schema","Stockage du schéma","","Almacén de esquema",
+     "RecipeControllerRecipeLoaded","Recipe loaded","Ricetta caricata","Recette chargée","","Receta cargada",
+     "RecipesEditorStore","Store","Archivio","Stockage","","Almacén",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","RecipeSchema non impostato","RecipeSchema non défini","","RecipeSchema no establecido",
+     "RecipesEditorRecipeNotFound","Recipe not found","Ricetta non trovata","Recette introuvable","","Receta no encontrada",
+     "RecipesEditorNotARecipe","is not a recipe","non è una ricetta","n’est pas une recette","","no es una receta",
+     "RecipesEditorNotAStore","is not a store","non è un archivio","n’est pas un stockage","","no es un almacén"
     ]
    }
