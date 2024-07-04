@@ -63,7 +63,7 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 1001
-    - Name: DataLogger1
+    - Name: DataLoggerGraficoEss
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -97,6 +97,9 @@ Children:
           Type: StoreColumn
           DataType: Float
         - Name: REAL_PRESSURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_TEMPER_SET_FOR_GRAPH
           Type: StoreColumn
           DataType: Float
     - Name: RecipeSchema1

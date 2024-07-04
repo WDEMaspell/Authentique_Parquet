@@ -1717,24 +1717,131 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: REAL_DOOR_LEFT_TEMPERATURE
         Type: TrendPen
         DataType: BaseDataType
         Children:
         - Name: Thickness
           Type: BaseDataVariableType
           DataType: Size
-          Value: -1.0
+          Value: 5.0
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#008000"
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_PRESSURE"
+          Value: "../../Model/VariablesToLog/REAL_DOOR_LEFT_TEMPERATURE/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"it-IT","Text":"Left temperature"}
+      - Name: REAL_DOOR_RIGHT_TEMPERATURE
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 5.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ff0000"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/REAL_DOOR_RIGHT_TEMPERATURE/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"it-IT","Text":"Right temperature"}
+      - Name: REAL_HUMIDITY_AVERAGE
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 5.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#0fafff"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/REAL_HUMIDITY_AVERAGE/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"it-IT","Text":"Average humidity"}
+      - Name: REAL_PRESSURE
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 5.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffff00"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/REAL_PRESSURE/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1746,12 +1853,7 @@ Children:
           DataType: LocalizedText
           ModellingRule: Optional
           Value: {"NamespaceIndex":28,"TextId":"Real Pressure"}
-        - Name: Color
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#ffff00"
-      - Name: TrendPen2
+      - Name: REAL_TEMPER_SET_FOR_GRAPH
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -1765,26 +1867,26 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#00ff3f"
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUMIDITY_AVERAGE"
+          Value: "../../Model/VariablesToLog/REAL_TEMPER_SET_FOR_GRAPH/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
-        - Name: Color
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#0fafff"
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Real Humidity"}
+          Value: {"LocaleId":"it-IT","Text":"Temperature set"}
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -1863,6 +1965,17 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Authentique_Parquet/Loggers/DataLoggerGraficoEss"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: HumidityGraphic
   Id: g=029f5b5025ca5a2804f7c1037ea8fb4d
   Supertype: Screen
@@ -1878,86 +1991,183 @@ Children:
     DataType: Color
     ModellingRule: Optional
     Value: "#e4e4e4"
-  - Name: XYChart1
-    Type: XYChart
+  - Name: Trend1
+    Type: Trend
     Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: "Sonde d'humidité 1"
-        Type: XYChartArrayLinePen
+      - Name: REAL_HUM_PROBE_1
+        Type: TrendPen
+        DataType: BaseDataType
         Children:
-        - Name: PointArray
+        - Name: Thickness
           Type: BaseDataVariableType
-          DataType: Number
-          ValueRank: 2
-          ArrayDimensions: [0,0]
-          Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_1"
+          DataType: Size
+          Value: 5.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
         - Name: Color
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#ffff00"
-      - Name: "Sonde d'humidité 2"
-        Type: XYChartArrayLinePen
-        Children:
-        - Name: PointArray
-          Type: BaseDataVariableType
-          DataType: Number
-          ValueRank: 2
-          ArrayDimensions: [0,0]
-          Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/REAL_HUM_PROBE_1/LastValue"
           Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_2"
-        - Name: Color
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+        - Name: Title
           Type: BaseDataVariableType
-          DataType: Color
+          DataType: LocalizedText
           ModellingRule: Optional
-          Value: "#0000ff"
-      - Name: "Sonde d'humidité 3"
-        Type: XYChartArrayLinePen
+          Value: {"LocaleId":"it-IT","Text":"Humidity probe 1"}
+      - Name: REAL_HUM_PROBE_2
+        Type: TrendPen
+        DataType: BaseDataType
         Children:
-        - Name: PointArray
+        - Name: Thickness
           Type: BaseDataVariableType
-          DataType: Number
-          ValueRank: 2
-          ArrayDimensions: [0,0]
-          Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_3"
+          DataType: Size
+          Value: 5.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
         - Name: Color
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#00ff3f"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/REAL_HUM_PROBE_2/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"it-IT","Text":"Humidity probe 2"}
+      - Name: REAL_HUM_PROBE_3
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 5.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ff0000"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/REAL_HUM_PROBE_3/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"it-IT","Text":"Humidity probe 3"}
+    - Class: Reference
+      Target: ns=5;i=1129
+      Direction: Forward
+    - Name: XAxis
+      Type: DateTimeAxis
+      Children:
+      - Name: Follow
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Window
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:5.0000000"
+      - Name: Interactive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+    - Name: YAxis
+      Type: ValueAxis
+      Children:
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: HorizontalPositionEnum
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -100.0
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 100.0
+      - Name: AutoScale
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Interactive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
     - Name: LegendVisible
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Class: Reference
-      Target: ns=5;i=573
+      Target: ns=5;i=1201
+      Direction: Forward
+    - Name: TimeRanges
+      Type: BaseObjectType
+    - Class: Reference
+      Target: ns=5;i=1209
       Direction: Forward
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 750.0
+      Value: 740.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 400.0
+    - Name: ReferenceTimeZone
+      Type: BaseDataVariableType
+      DataType: ReferenceTimeZone
+      ModellingRule: Optional
+      Value: 1
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -1967,17 +2177,18 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 30.0
-    - Name: CenterX
-      Type: BaseDataVariableType
-      DataType: Double
-      ModellingRule: Optional
-      Value: 300.0
-    - Name: CenterY
-      Type: BaseDataVariableType
-      DataType: Double
-      ModellingRule: Optional
-      Value: 160.0
+      Value: 20.0
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Authentique_Parquet/Loggers/DataLoggerGraficoUmidità"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: HumidityDryingProgram
   Id: g=df0874fd78265e76402d86b84bc69933
   Supertype: Screen
