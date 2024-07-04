@@ -62,12 +62,12 @@ Children:
 - File: System/System.yaml
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
-- Name: Rec1
+- Name: RecipeSchema1
   Type: Alias
   DataType: NodeId
-  Value: "/Objects/Authentique_Parquet/Recipes/Rec1/EditModel"
+  Value: "/Objects/Authentique_Parquet/Recipes/RecipeSchema1/EditModel"
   Children:
   - Name: Kind
     Type: PropertyType
     DataType: NodeId
-    Value: "/Objects/Authentique_Parquet/Recipes/Rec1/EditModel"
+    Value: "/Objects/Authentique_Parquet/Recipes/RecipeSchema1/EditModel"
