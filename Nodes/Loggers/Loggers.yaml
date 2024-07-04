@@ -415,6 +415,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
+    Value: "/Objects/Authentique_Parquet/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType

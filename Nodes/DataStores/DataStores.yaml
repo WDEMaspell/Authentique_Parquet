@@ -213,6 +213,39 @@ Children:
         - Name: /GradientTemperatureSet
           Type: StoreColumn
           DataType: Float
+    - Name: DataLoggerGraficoUmidità
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: REAL_HUM_PROBE_1
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_2
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_3
+          Type: StoreColumn
+          DataType: Float
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
