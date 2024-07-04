@@ -1,0 +1,30 @@
+Name: DemoA
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable5
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable6
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable7
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable8
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable9
+  Type: BaseDataVariableType
+  DataType: Boolean

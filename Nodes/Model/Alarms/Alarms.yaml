@@ -1,0 +1,28 @@
+Name: Alarms
+Type: FolderType
+Children:
+- Name: WarningPP1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: WarningPP2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: WarningPP3
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: WarningPP4
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: ErrorPP1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: ErrorPP2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: ErrorPP3
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: ErrorPP4
+  Type: BaseDataVariableType
+  DataType: Boolean
+- File: DemoA/DemoA.yaml

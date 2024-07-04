@@ -1,0 +1,127 @@
+Name: LiveData
+Type: FolderType
+Children:
+- Name: OvenTemperature1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 120
+- Name: OvenTemperature2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 175
+- Name: OvenTemperature3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 220
+- Name: OvenTemperature4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 90
+- Name: OvenTemperature5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30
+- Name: PickPlaceProgress1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: PickPlaceProgress2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: PickPlaceProgress3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: PickPlaceOverall
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ReelCounter1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReelCounter2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReelCounter3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReelCounter4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true

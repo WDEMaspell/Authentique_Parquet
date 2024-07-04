@@ -1,0 +1,19 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: LocaleChanged1
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Locale"
+- File: Cycle/Cycle.yaml
+- File: Statistics/Statistics.yaml
+- File: Alarms/Alarms.yaml
+- File: Settings/Settings.yaml
+- File: PCB_Data/PCB_Data.yaml
+- Name: Locale
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
