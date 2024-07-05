@@ -32,28 +32,3 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-- Name: VariablesSimulator
-  Type: NetLogic
-  Children:
-  - Name: iSin
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: iCos
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: iRamp
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: bRunSimulation
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Cycle/Start"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2

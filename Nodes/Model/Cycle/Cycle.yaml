@@ -1,9 +1,2 @@
 Name: Cycle
 Type: FolderType
-Children:
-- Name: Start
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: true
-- File: LiveData/LiveData.yaml
-- File: Status/Status.yaml
