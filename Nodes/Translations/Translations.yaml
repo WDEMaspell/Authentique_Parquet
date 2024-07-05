@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [231,6],
+    "Dimensions": [232,6],
     "Body": [
      "","en-US","it-IT","fr-FR","nl-BE","es-ES",
      "Password","Password","Password","Mot de passe","","",
@@ -140,7 +140,7 @@ Children:
      "View 1","View 1","Vista 1","","","",
      "View 2","View 2","Vista 2","","","",
      "Working program :","Working program:","Programma di lavoro:","","","",
-     "Alarm","Alarm","Allarme","","","",
+     "Alarm","Alarm","Allarme","Alarme","","",
      "Warning","Warning","Avviso","","","",
      "Info","Info","Info","","","",
      "Error","Error","Errore","","","",
@@ -241,6 +241,7 @@ Children:
      "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","RecipeSchema non impostato","RecipeSchema non défini","","RecipeSchema no establecido",
      "RecipesEditorRecipeNotFound","Recipe not found","Ricetta non trovata","Recette introuvable","","Receta no encontrada",
      "RecipesEditorNotARecipe","is not a recipe","non è una ricetta","n’est pas une recette","","no es una receta",
-     "RecipesEditorNotAStore","is not a store","non è un archivio","n’est pas un stockage","","no es un almacén"
+     "RecipesEditorNotAStore","is not a store","non è un archivio","n’est pas un stockage","","no es un almacén",
+     "Reset all","Reset all","Reset all","Réinitialiser tout","",""
     ]
    }
