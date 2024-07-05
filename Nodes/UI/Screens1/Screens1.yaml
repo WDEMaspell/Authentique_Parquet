@@ -893,7 +893,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"NamespaceIndex":28,"TextId":"Confirm"}
+        Value: {"NamespaceIndex":28,"TextId":"Reset"}
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1006,7 +1006,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"NamespaceIndex":28,"TextId":"Confirm All"}
+        Value: {"NamespaceIndex":28,"TextId":"Reset all"}
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -9172,7 +9172,7 @@ Children:
       - Name: CSVFile
         Type: BaseDataVariableType
         DataType: AbsoluteResourceUri
-        Value: "file:///C:/Users/AlessandroBiferni-WD/OneDrive - WDE MASPELL SRL/Desktop/EXPORT CSV OPTIX/EXPORT AUTENTIQUE.csv"
+        Value: "file:///C:/Users/FrancescoFabbri-WDEM/OneDrive - WDE MASPELL SRL/Desktop/programmi HMI/OPTIX/Authentique_Parquet/EXPORT AUTENTIQUE.csv"
       - Name: CSVSeparator
         Type: BaseDataVariableType
         DataType: String
