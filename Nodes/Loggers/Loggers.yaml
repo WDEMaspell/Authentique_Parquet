@@ -168,7 +168,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"26322cafe908f420ec984abba606df64","Namespace":28}
+    Value: "/Objects/Authentique_Parquet/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType

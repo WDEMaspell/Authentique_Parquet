@@ -1474,6 +1474,21 @@ Children:
       }
      }
     Children:
+    - Name: DescrEss
+      Type: CODESYSTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_ESS.DescrEss"
+      - Name: MaximumLength
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 20
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
     - Name: EssCooling_Remain_Time
       Type: CODESYSTag
       DataType: Duration
@@ -2571,34 +2586,3 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.PRESSURE_TEMPER_REGULATION.PressureSet"
-  - Name: UPS
-    Type: TagStructure
-    DataType: Structure
-    Value: 
-     {
-      "Type": 22,
-      "Body": {
-       "TypeId": {
-        "IdType": 0,
-        "Id": 0,
-        "Namespace": -1
-       },
-       "Body":    {}
-      }
-     }
-    Children:
-    - Name: testo
-      Type: CODESYSTag
-      DataType: String
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.UPS.testo"
-      - Name: MaximumLength
-        Type: BaseDataVariableType
-        DataType: Int32
-        Value: 80
-      - Name: Encoding
-        Type: BaseDataVariableType
-        DataType: Encoding
