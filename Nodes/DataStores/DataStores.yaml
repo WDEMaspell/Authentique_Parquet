@@ -165,6 +165,9 @@ Children:
         - Name: Name
           Type: StoreColumn
           DataType: String
+        - Name: /DescrEss
+          Type: StoreColumn
+          DataType: String
         - Name: /EssCooling_Time_Set
           Type: StoreColumn
           DataType: Duration
@@ -255,9 +258,6 @@ Children:
         - Name: /GradientTemperatureSet
           Type: StoreColumn
           DataType: Float
-        - Name: /Descrizione ciclo
-          Type: StoreColumn
-          DataType: Int32
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward

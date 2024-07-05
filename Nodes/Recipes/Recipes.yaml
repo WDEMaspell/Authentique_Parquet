@@ -8,6 +8,9 @@ Children:
   - Name: Root
     Type: BaseObjectType
     Children:
+    - Name: DescrEss
+      Type: BaseDataVariableType
+      DataType: String
     - Name: EssCooling_Time_Set
       Type: BaseDataVariableType
       DataType: Duration
@@ -98,9 +101,6 @@ Children:
     - Name: GradientTemperatureSet
       Type: BaseDataVariableType
       DataType: Float
-    - Name: Descrizione ciclo
-      Type: BaseDataVariableType
-      DataType: Int32
   - Class: Reference
     Target: ns=17;i=27
     Direction: Forward
@@ -155,8 +155,12 @@ Children:
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: EditModel
+    Id: g=8354310fedcb2e37e759995d3581ec89
     Type: BaseObjectType
     Children:
+    - Name: DescrEss
+      Type: BaseDataVariableType
+      DataType: String
     - Name: EssCooling_Time_Set
       Type: BaseDataVariableType
       DataType: Duration
@@ -247,6 +251,3 @@ Children:
     - Name: GradientTemperatureSet
       Type: BaseDataVariableType
       DataType: Float
-    - Name: Descrizione ciclo
-      Type: BaseDataVariableType
-      DataType: Int32
