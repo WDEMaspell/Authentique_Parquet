@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [253,6],
+    "Dimensions": [258,6],
     "Body": [
      "","en-US","it-IT","fr-FR","nl-BE","es-ES",
      "Password","Password","Password","Mot de passe","","",
@@ -263,6 +263,11 @@ Children:
      "A081A","Dryer Z8AI #2 card: MODBUS COMM. FAILURE","Scheda #2 Z8AI essiccatoio: ERRORE COMM. MODBUS","Carte Séchoir Z8AI #2 : MODBUS COMM. ÉCHEC","Droger Z8AI #2-kaart: MODBUS COMM. MISLUKKING","Secadora Z8AI # 2 tarjeta: MODBUS COMM. FALLA",
      "A123A","Anomaly opening valve VSCE1 to atmosphere","Anomalia apertura valvola VSCE1 ad atmosfera","Anomalie ouverture vanne VSCE1 a l'atmosphère","VSCE1 klepopeningsafwijking naar de atmosfeer","Anomalía de apertura de la válvula VSCE1 a la atmósfera",
      "A123B","Anomaly opening valve VSCE1 at the dryer","Anomalia apertura valvola VSCE1 all'essiccatore","Anomalie ouverture vanne VSCE1 a le séchoir","VSCE1 klepopeningsfout bij de droger","Anomalía de apertura de la válvula VSCE1 en el secador",
-     "A081B","Dryer Z4RTD-2 #3 card: MODBUS COMM. FAILURE","Scheda #3 Z4RTD-2 essiccatoio: ERRORE COMM. MODBUS","Carte séchoir Z4RTD-2 #3 : MODBUS COMM. ÉCHEC","Droger Z4RTD-2 #3 kaart: MODBUS COMM. MISLUKKING","Tarjeta secadora Z4RTD-2 #3: COMUNICACIÓN MODBUS. FALLA"
+     "A081B","Dryer Z4RTD-2 #3 card: MODBUS COMM. FAILURE","Scheda #3 Z4RTD-2 essiccatoio: ERRORE COMM. MODBUS","Carte séchoir Z4RTD-2 #3 : MODBUS COMM. ÉCHEC","Droger Z4RTD-2 #3 kaart: MODBUS COMM. MISLUKKING","Tarjeta secadora Z4RTD-2 #3: COMUNICACIÓN MODBUS. FALLA",
+     "Server","Server","Server","Serveur","","Servidor",
+     "Username","Username","Nome utente","Nom d’utilisateur","","Nombre de usuario",
+     "DBMS Type","DBMS Type","Tipo DBMS","Type de SGBD","","Tipo de DBMS",
+     "Connected"," Connected"," Connesso"," Connecté",""," Conectado",
+     "Database","Database","Database","Base de données","","Base de datos"
     ]
    }

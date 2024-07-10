@@ -14,6 +14,7 @@ using FTOptix.CODESYS;
 using FTOptix.Modbus;
 using FTOptix.DataLogger;
 using FTOptix.Recipe;
+using FTOptix.ODBCStore;
 #endregion
 
 public class LocalizedClockLogic : BaseNetLogic
