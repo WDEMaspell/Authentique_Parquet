@@ -105,6 +105,11 @@ Children:
         DataType: Float
         ModellingRule: Optional
         Value: 75.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
     - Name: Label1
       Type: Label
       Children:
@@ -510,6 +515,11 @@ Children:
         DataType: Float
         ModellingRule: Optional
         Value: 75.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
     - Name: Label1
       Type: Label
       Children:
@@ -942,6 +952,11 @@ Children:
         DataType: Float
         ModellingRule: Optional
         Value: 75.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
     - Name: Label1
       Type: Label
       Children:
@@ -1106,6 +1121,11 @@ Children:
         DataType: Float
         ModellingRule: Optional
         Value: 75.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
     - Name: Label1
       Type: Label
       Children:

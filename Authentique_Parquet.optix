@@ -124,10 +124,10 @@ Project:
    Module: FTOptix.DataLogger.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 5243
+  TotalNodeCount: 5248
   Objects: 741
   ObjectTypes: 9
-  Variables: 4483
+  Variables: 4488
   VariableTypes: 0
   DataTypes: 0
   Methods: 10
