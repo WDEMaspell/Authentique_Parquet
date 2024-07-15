@@ -117,7 +117,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Dryer back temperature:"}
+        Value: {"NamespaceIndex":28,"TextId":"Dryer back temperature:"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -158,7 +158,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Right :"}
+        Value: {"NamespaceIndex":28,"TextId":"Right :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -176,7 +176,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Left :"}
+        Value: {"NamespaceIndex":28,"TextId":"Left :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -194,7 +194,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Right heater :"}
+        Value: {"NamespaceIndex":28,"TextId":"Right heater :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -212,7 +212,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Left heater :"}
+        Value: {"NamespaceIndex":28,"TextId":"Left heater :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -527,7 +527,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Dryer door temperature:"}
+        Value: {"NamespaceIndex":28,"TextId":"Dryer door temperature:"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -568,7 +568,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Right :"}
+        Value: {"NamespaceIndex":28,"TextId":"Right :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -586,7 +586,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Left :"}
+        Value: {"NamespaceIndex":28,"TextId":"Left :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -604,7 +604,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Right heater :"}
+        Value: {"NamespaceIndex":28,"TextId":"Right heater :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -622,7 +622,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Left heater :"}
+        Value: {"NamespaceIndex":28,"TextId":"Left heater :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -964,7 +964,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Pressure :"}
+        Value: {"NamespaceIndex":28,"TextId":"Pressure :"}
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -1133,7 +1133,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Humidity :"}
+        Value: {"NamespaceIndex":28,"TextId":"Humidity :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1174,7 +1174,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Probe 1 :"}
+        Value: {"NamespaceIndex":28,"TextId":"Probe 1 :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1192,7 +1192,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Probe 2 :"}
+        Value: {"NamespaceIndex":28,"TextId":"Probe 2 :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1210,7 +1210,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Probe 3 :"}
+        Value: {"NamespaceIndex":28,"TextId":"Probe 3 :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1228,7 +1228,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"it-IT","Text":"Average :"}
+        Value: {"NamespaceIndex":28,"TextId":"Average :"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -3255,7 +3255,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Left temperature"}
+          Value: {"NamespaceIndex":28,"TextId":"Left temperature"}
       - Name: REAL_DOOR_RIGHT_TEMPERATURE
         Type: TrendPen
         DataType: BaseDataType
@@ -3289,7 +3289,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Right temperature"}
+          Value: {"NamespaceIndex":28,"TextId":"Right temperature"}
       - Name: REAL_HUMIDITY_AVERAGE
         Type: TrendPen
         DataType: BaseDataType
@@ -3323,7 +3323,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Average humidity"}
+          Value: {"NamespaceIndex":28,"TextId":"Average humidity"}
       - Name: REAL_PRESSURE
         Type: TrendPen
         DataType: BaseDataType
@@ -3535,7 +3535,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Humidity probe 1"}
+          Value: {"NamespaceIndex":28,"TextId":"Humidity probe 1"}
       - Name: REAL_HUM_PROBE_2
         Type: TrendPen
         DataType: BaseDataType
@@ -3569,7 +3569,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Humidity probe 2"}
+          Value: {"NamespaceIndex":28,"TextId":"Humidity probe 2"}
       - Name: REAL_HUM_PROBE_3
         Type: TrendPen
         DataType: BaseDataType
@@ -3603,7 +3603,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"it-IT","Text":"Humidity probe 3"}
+          Value: {"NamespaceIndex":28,"TextId":"Humidity probe 3"}
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -11830,7 +11830,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"it-IT","Text":"EXPORT"}
+      Value: {"NamespaceIndex":28,"TextId":"EXPORT"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -11920,7 +11920,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"it-IT","Text":"IMPORT"}
+      Value: {"NamespaceIndex":28,"TextId":"IMPORT"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -12117,7 +12117,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_BACK_LEFT_HEATER_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_BACK_LEFT_HEATER_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12153,7 +12153,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_BACK_LEFT_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_BACK_LEFT_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12189,7 +12189,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_BACK_RIGHT_HEATER_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_BACK_RIGHT_HEATER_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12225,7 +12225,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_BACK_RIGHT_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_BACK_RIGHT_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12261,7 +12261,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_DOOR_LEFT_HEATER_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_DOOR_LEFT_HEATER_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12297,7 +12297,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_DOOR_LEFT_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_DOOR_LEFT_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12333,7 +12333,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_DOOR_RIGHT_HEATER_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_DOOR_RIGHT_HEATER_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12369,7 +12369,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_DOOR_RIGHT_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_DOOR_RIGHT_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12405,7 +12405,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_DRYER_TEMPERATURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_DRYER_TEMPERATURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12441,7 +12441,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUM_PROBE_1"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUM_PROBE_1"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12477,7 +12477,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUM_PROBE_2"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUM_PROBE_2"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12513,7 +12513,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUM_PROBE_3"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUM_PROBE_3"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12549,7 +12549,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUM_PROBE_4"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUM_PROBE_4"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12585,7 +12585,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUM_PROBE_5"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUM_PROBE_5"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12621,7 +12621,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUM_PROBE_6"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUM_PROBE_6"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12657,7 +12657,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_HUMIDITY_AVERAGE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_HUMIDITY_AVERAGE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12693,7 +12693,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"REAL_PRESSURE"}
+          Value: {"NamespaceIndex":28,"TextId":"REAL_PRESSURE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12729,7 +12729,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"WOOD_GROUP_SET"}
+          Value: {"NamespaceIndex":28,"TextId":"WOOD_GROUP_SET"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12765,7 +12765,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"WOOD_THICKNESS"}
+          Value: {"NamespaceIndex":28,"TextId":"WOOD_THICKNESS"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -12801,7 +12801,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"it-IT","Text":"WOOD_TYPE"}
+          Value: {"NamespaceIndex":28,"TextId":"WOOD_TYPE"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -13841,7 +13841,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"EXPORT"}
+      Value: {"NamespaceIndex":28,"TextId":"EXPORT"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
