@@ -109,6 +109,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Color
         Value: "#0fafff"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../BorderColor.1"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -190,6 +195,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 5.0
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
   - Name: SwitchStyles
     Type: BaseObjectType
     Children:
@@ -287,6 +296,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     Value: "#ffffff"
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#b3b3b3"
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
@@ -630,331 +643,153 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 90.0
-      - Name: Cycle1
+      - Name: Panel1
         Type: Panel
         Children:
         - Name: Width
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 100.0
+          Value: 149.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
-        - Name: Status
-          Type: Panel
-          Children:
-          - Name: Width
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 65.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 30.0
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 28.0
-          - Name: Cycle
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":28,"TextId":"Cycle"}
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 50.0
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-            - Name: FontWeight
-              Type: BaseDataVariableType
-              DataType: FontWeightEnum
-              ModellingRule: Optional
-              Value: 400
-            - Name: FontFamily
-              Type: BaseDataVariableType
-              DataType: Font
-              ModellingRule: Optional
-              Value: "Barlow Black"
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 1
-          - Name: StartedStopped
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: KeyValueConverter1
-                Type: ValueMapConverter
-                Children:
-                - Name: Source
-                  Type: BaseDataVariableType
-                  DataType: BaseDataType
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/Authentique_Parquet/Model/Cycle/Start"
-                - Name: ns=3;Pairs
-                  Type: BaseObjectType
-                  Children:
-                  - Name: Pair
-                    Type: ValueMapPair
-                    Children:
-                    - Name: Key
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                    - Name: Value
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":28,"TextId":"Stopped"}
-                  - Name: Pair1
-                    Type: ValueMapPair
-                    Children:
-                    - Name: Key
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      Value: true
-                    - Name: Value
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":28,"TextId":"Started"}
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 18.0
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 14.0
-            - Name: FontWeight
-              Type: BaseDataVariableType
-              DataType: FontWeightEnum
-              ModellingRule: Optional
-              Value: 400
-            - Name: FontFamily
-              Type: BaseDataVariableType
-              DataType: Font
-              ModellingRule: Optional
-              Value: "Barlow Medium"
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 1
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 2
-        - Name: Start
-          Type: Button
-          Children:
-          - Name: MouseClickEventHandler1
-            Type: EventHandler
-            Children:
-            - Name: ListenEventType
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-            - Name: MethodsToCall
-              Type: BaseObjectType
-              Children:
-              - Name: MethodContainer1
-                Type: BaseObjectType
-                Children:
-                - Name: ns=3;ObjectPointer
-                  Type: NodePointer
-                  DataType: NodeId
-                  Value: "/Objects/Commands/VariableCommands"
-                  Children:
-                  - Name: Kind
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: ns=3;Method
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "Toggle"
-                - Name: InputArguments
-                  Type: BaseObjectType
-                  Children:
-                  - Name: VariableToModify
-                    Type: BaseDataVariableType
-                    DataType: VariablePointer
-                    Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
-                    Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdEssCycleStart"
-                  - Name: ArrayIndex
-                    Type: BaseDataVariableType
-                    DataType: UInt32
-                    Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
-                    ValueRank: ScalarOrOneDimension
-            - Name: EventArguments
-              Type: MouseClickEvent
-              Children:
-              - Name: EventId
-                Type: PropertyType
-                DataType: ByteString
-              - Name: EventType
-                Type: PropertyType
-                DataType: NodeId
-              - Name: SourceNode
-                Type: PropertyType
-                DataType: NodeId
-              - Name: SourceName
-                Type: PropertyType
-                DataType: String
-              - Name: Time
-                Type: PropertyType
-                DataType: UtcTime
-              - Name: ReceiveTime
-                Type: PropertyType
-                DataType: UtcTime
-              - Name: Message
-                Type: PropertyType
-                DataType: LocalizedText
-              - Name: Severity
-                Type: PropertyType
-                DataType: UInt16
-          - Name: Width
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 50.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 50.0
-          - Name: Appearance
-            Type: BaseVariableType
-            DataType: String
-            ModellingRule: Optional
-            Value: "transparent"
-          - Name: HorizontalAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-            ModellingRule: Optional
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 2
-          - Name: TopMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: -1.0
-          - Name: BottomMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: ImageWidth
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 40.0
-          - Name: ImageHeight
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 40.0
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-          - Name: TextColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#ffffff"
-          - Name: TextPosition
-            Type: BaseDataVariableType
-            DataType: Position
-            ModellingRule: Optional
-            Value: 5
-          - Name: FontFamily
-            Type: BaseDataVariableType
-            DataType: Font
-            ModellingRule: Optional
-            Value: "Barlow SemiBold"
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: ImagePath
-            Type: BaseDataVariableType
-            DataType: ResourceUri
-            Value: "ns=28;%PROJECTDIR%/Graphics/icon_stop.svg"
-            Children:
-            - Name: KeyValueConverter1
-              Type: ValueMapConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/Authentique_Parquet/Model/Cycle/Start"
-              - Name: ns=3;Pairs
-                Type: BaseObjectType
-                Children:
-                - Name: Pair
-                  Type: ValueMapPair
-                  Children:
-                  - Name: Key
-                    Type: BaseDataVariableType
-                    DataType: Boolean
-                  - Name: Value
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=28;%PROJECTDIR%/Graphics/icon_play.svg"
-                - Name: Pair1
-                  Type: ValueMapPair
-                  Children:
-                  - Name: Key
-                    Type: BaseDataVariableType
-                    DataType: Boolean
-                    Value: true
-                  - Name: Value
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=28;%PROJECTDIR%/Graphics/icon_stop.svg"
+          Value: 60.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 301.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 10.0
-        - Name: RightMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 260.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"fr-FR","Text":"Label1"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 135.0
+        - Name: MomentaryButton1
+          Type: MomentaryButton
+          Children:
+          - Name: Active
+            Type: BaseDataVariableType
+            DataType: Boolean
+            AccessLevel: Read
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdEssCycleStart"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 1
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"fr-FR","Text":"START"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 60.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 30.0
+          - Name: MinHoldTime
+            Type: BaseDataVariableType
+            DataType: Duration
+            ModellingRule: Optional
+            Value: "0:00:00:0.5000000"
+        - Name: MomentaryButton2
+          Type: MomentaryButton
+          Children:
+          - Name: Active
+            Type: BaseDataVariableType
+            DataType: Boolean
+            AccessLevel: Read
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdEssCycleStop"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 1
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"fr-FR","Text":"STOP"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 80.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 60.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 30.0
+          - Name: MinHoldTime
+            Type: BaseDataVariableType
+            DataType: Duration
+            ModellingRule: Optional
+            Value: "0:00:00:0.5000000"
     - Name: NavigationPanel1
       Type: NavigationPanel
       Children:

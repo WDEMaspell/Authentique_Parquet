@@ -99,18 +99,68 @@ Children:
         - Name: REAL_DOOR_LEFT_TEMPERATURE
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_DOOR_LEFT_TEMPERATURE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
         - Name: REAL_DOOR_RIGHT_TEMPERATURE
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_DOOR_RIGHT_TEMPERATURE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
         - Name: REAL_HUMIDITY_AVERAGE
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUMIDITY_AVERAGE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
         - Name: REAL_PRESSURE
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_PRESSURE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
         - Name: REAL_TEMPER_SET_FOR_GRAPH
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_TEMPER_SET_FOR_GRAPH"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
     - Name: DataLoggerGraficoUmidità
       Type: SQLiteStoreTable
       Children:
@@ -138,12 +188,42 @@ Children:
         - Name: REAL_HUM_PROBE_1
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_1"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
         - Name: REAL_HUM_PROBE_2
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_2"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
         - Name: REAL_HUM_PROBE_3
           Type: StoreColumn
           DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_3"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
     - Name: RecipeSchema1
       Type: SQLiteStoreTable
       Children:

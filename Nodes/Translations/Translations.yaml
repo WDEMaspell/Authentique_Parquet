@@ -281,7 +281,7 @@ Children:
      "REAL_HUM_PROBE_5","","REAL_HUM_PROBE_5","","","",
      "REAL_HUM_PROBE_6","","REAL_HUM_PROBE_6","","","",
      "REAL_HUMIDITY_AVERAGE","","REAL_HUMIDITY_AVERAGE","","","",
-     "Right temperature","","Right temperature","","","",
+     "Right temperature","Right temperature","Temperatura destra","Temperature droite","","",
      "Right heater :","Right heater :","Resistenza destra :","Résistance droite","Rechtse weerstand","Resistencia derecha",
      "Right :","Right :","Destra :","droite","rechts","derecha",
      "WOOD_GROUP_SET","","WOOD_GROUP_SET","","","",
