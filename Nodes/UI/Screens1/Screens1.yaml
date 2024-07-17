@@ -11282,7 +11282,7 @@ Children:
       - Name: CSVFile
         Type: BaseDataVariableType
         DataType: AbsoluteResourceUri
-        Value: "file:///C:/Users/Public/Desktop"
+        Value: "file:///C:/Users/WDE Maspell/Desktop/Ric-1.csv"
       - Name: CSVSeparator
         Type: BaseDataVariableType
         DataType: String
