@@ -258,6 +258,21 @@ Children:
     Children:
     - Name: Default
       Type: LabelStyle
+    - Name: LabelStyle1
+      Type: LabelStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
   - Name: RadioButtonStyles
     Type: BaseObjectType
     Children:
@@ -470,7 +485,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 130.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -498,243 +513,6 @@ Children:
           Type: BaseVariableType
           DataType: TextHorizontalAlignment
           ModellingRule: Optional
-          Value: 1
-      - Name: Locale
-        Type: Button
-        Children:
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: -10.0
-        - Name: Appearance
-          Type: BaseVariableType
-          DataType: String
-          ModellingRule: Optional
-          Value: "transparent"
-        - Name: ImagePath
-          Type: BaseDataVariableType
-          DataType: ResourceUri
-          Value: "ns=28;%PROJECTDIR%/Graphics/icon_language_en_white.svg"
-          Children:
-          - Name: ConditionalConverter1
-            Type: ConditionalConverter
-            Children:
-            - Name: Condition
-              Type: BaseDataVariableType
-              DataType: Boolean
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/Authentique_Parquet/Model/Locale"
-            - Name: TrueValue
-              Type: BaseDataVariableType
-              DataType: ResourceUri
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: "ns=28;%PROJECTDIR%/Graphics/icon_language_en_white.svg"
-            - Name: FalseValue
-              Type: BaseDataVariableType
-              DataType: ResourceUri
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: "ns=28;%PROJECTDIR%/Graphics/icon_language_it_white.svg"
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 50.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 50.0
-        - Name: MouseClickEventHandler1
-          Type: EventHandler
-          Children:
-          - Name: ListenEventType
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-          - Name: MethodsToCall
-            Type: BaseObjectType
-            Children:
-            - Name: MethodContainer1
-              Type: BaseObjectType
-              Children:
-              - Name: ns=3;ObjectPointer
-                Type: NodePointer
-                DataType: NodeId
-                Value: "/Objects/Commands/VariableCommands"
-                Children:
-                - Name: Kind
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: ns=3;Method
-                Type: BaseDataVariableType
-                DataType: String
-                Value: "Toggle"
-              - Name: InputArguments
-                Type: BaseObjectType
-                Children:
-                - Name: VariableToModify
-                  Type: BaseDataVariableType
-                  DataType: VariablePointer
-                  Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
-                  Value: {"IdType":2,"Id":"075a63194ed42a8c89c47952185d74d9","Namespace":28}
-                - Name: ArrayIndex
-                  Type: BaseDataVariableType
-                  DataType: UInt32
-                  Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
-                  ValueRank: ScalarOrOneDimension
-            - Name: MethodContainer2
-              Type: BaseObjectType
-              Children:
-              - Name: ns=3;ObjectPointer
-                Type: NodePointer
-                DataType: NodeId
-                Value: "/Objects/Commands/VariableCommands"
-                Children:
-                - Name: Kind
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: ns=3;Method
-                Type: BaseDataVariableType
-                DataType: String
-                Value: "Set"
-              - Name: InputArguments
-                Type: BaseObjectType
-                Children:
-                - Name: VariableToModify
-                  Type: BaseDataVariableType
-                  DataType: VariablePointer
-                  Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "{Session}/ActualLocaleId@NodeId"
-                    Children:
-                    - Name: Mode
-                      Type: BaseVariableType
-                      DataType: DynamicLinkMode
-                      ModellingRule: Optional
-                      Value: 2
-                - Name: Value
-                  Type: BaseDataVariableType
-                  DataType: LocaleId
-                  Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-                  Children:
-                  - Name: ConditionalConverter1
-                    Type: ConditionalConverter
-                    Children:
-                    - Name: Condition
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasSource
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                    - Name: TrueValue
-                      Type: BaseDataVariableType
-                      DataType: LocaleId
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: "en-US"
-                    - Name: FalseValue
-                      Type: BaseDataVariableType
-                      DataType: LocaleId
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: "fr-FR"
-                - Name: ArrayIndex
-                  Type: BaseDataVariableType
-                  DataType: UInt32
-                  Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-                  ValueRank: ScalarOrOneDimension
-          - Name: EventArguments
-            Type: MouseClickEvent
-            Children:
-            - Name: EventId
-              Type: PropertyType
-              DataType: ByteString
-            - Name: EventType
-              Type: PropertyType
-              DataType: NodeId
-            - Name: SourceNode
-              Type: PropertyType
-              DataType: NodeId
-            - Name: SourceName
-              Type: PropertyType
-              DataType: String
-            - Name: Time
-              Type: PropertyType
-              DataType: UtcTime
-            - Name: ReceiveTime
-              Type: PropertyType
-              DataType: UtcTime
-            - Name: Message
-              Type: PropertyType
-              DataType: LocalizedText
-            - Name: Severity
-              Type: PropertyType
-              DataType: UInt16
-        - Name: VerticalAlignment
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: ImageWidth
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 40.0
-        - Name: ImageHeight
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 40.0
-        - Name: BottomMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 210.0
-        - Name: BackgroundColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#000000"
-        - Name: Elide
-          Type: BaseDataVariableType
-          DataType: ElideEnum
-          ModellingRule: Optional
-        - Name: WordWrap
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":""}
-        - Name: Style
-          Type: BaseDataVariableType
-          DataType: String
-          ModellingRule: Optional
-          Value: "Default"
       - Name: DateTime
         Type: Panel
         Children:
@@ -1322,6 +1100,21 @@ Children:
             Type: NodePointer
             DataType: NodeId
             Value: "/Objects/Authentique_Parquet/UI/Screens1/HumidityDryingProgram"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Panel4
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Authentique_Parquet/UI/Screens1/Parameters"
             Children:
             - Name: Kind
               Type: PropertyType
