@@ -11282,7 +11282,7 @@ Children:
       - Name: CSVFile
         Type: BaseDataVariableType
         DataType: AbsoluteResourceUri
-        Value: "file:///C:/Users/AlessandroBiferni-WD/OneDrive - WDE MASPELL SRL/Desktop/EXPORT CSV OPTIX/Ric-1.csv"
+        Value: "file:///C:/Users/Public/Desktop"
       - Name: CSVSeparator
         Type: BaseDataVariableType
         DataType: String
