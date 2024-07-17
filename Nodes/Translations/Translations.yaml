@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [279,6],
+    "Dimensions": [278,6],
     "Body": [
      "","en-US","it-IT","fr-FR","nl-BE","es-ES",
      "Password","Password","Password","Mot de passe","","",
@@ -134,7 +134,7 @@ Children:
      "Coveyor C3L3","Coveyor C3L3","Nastro trasportatore C3L3","","","",
      "Empty Pushes :","Empty Pushes :","Spinte a vuoto:","","","",
      "Execute","Execute","Esegui","","","",
-     "Export","Export","Esporta","","","",
+     "Export","Export","Esporta","Exporter","","",
      "First Track :","First Track :","Prima pista:","","","",
      "Force reel components (1,2,3,4):","Force reel components (1,2,3,4):","Forza componenti bobina (1,2,3,4):","","","",
      "High alarm","High alarm","Allarme alto","","","",
@@ -253,12 +253,10 @@ Children:
      "Average humidity","Average humidity","Umidità media ","humidité moyenne","gemiddelde MC","humedad media",
      "Dryer back temperature:","Dryer back temperature:","Temperatura fondo ess. :","Température fond sèchoir :","Droger bodemtemperatuur:","Temperatura  fondo  secadora:",
      "Dryer door temperature:","","Temperatura porta ess. :","Température porte sèchoir :","Temperatuur drogerdeur:","Temperatura  puerta  secadora:",
-     "EXPORT","","EXPORT","","","",
      "Humidity :","Humidity :","Umidità","Humidité","Vochtigheid","Humedad",
      "Humidity probe 1","Humidity probe 1","Sonda umidità 1","sonde d'humidité 1","vochtigheidssonde 1","sonda de humedad 1",
      "Humidity probe 2","Humidity probe 2","Sonda umidità 2","sonde d'humidité 2","vochtigheidssonde 2","sonda de humedad 2",
      "Humidity probe 3","Humidity probe 3","Sonda umidità 3","sonde d'humidité 3","vochtigheidssonde 3","sonda de humedad 3",
-     "IMPORT","","IMPORT","","","",
      "Left heater :","Left heater :","Resistenza sinistra","Résistance gauche","Linkse weerstand","Resistencia de izquierda",
      "Left :","Left :","Sinistra","Gauche","Links","Izquierda",
      "Left temperature","Left temperature","Temperatura sinistra","Température gauche","Links temperatuur","Temperatura izquierda",
@@ -289,6 +287,7 @@ Children:
      "WOOD_GROUP_SET","","WOOD_GROUP_SET","","","",
      "WOOD_TYPE","","WOOD_TYPE","","","",
      "WOOD_THICKNESS","","WOOD_THICKNESS","","","",
-     "MATRICOLA 545-23","SER. NUM. 545-23","MAT. 545-23","NUM. SER. 545-23","",""
+     "MATRICOLA 545-23","SER. NUM. 545-23","MAT. 545-23","NUM. SER. 545-23","","",
+     "Import","Import","Importa","Importer","",""
     ]
    }
