@@ -20,3 +20,7 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: true
+- Name: Mode
+  Type: BaseDataVariableType
+  DataType: FetchProviderModes
+  Value: 1

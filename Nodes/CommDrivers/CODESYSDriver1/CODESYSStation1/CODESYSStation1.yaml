@@ -5,7 +5,7 @@ Children:
 - Name: GatewayIP
   Type: BaseDataVariableType
   DataType: String
-  Value: "192.168.60.113"
+  Value: "127.0.0.1"
 - Name: Port
   Type: BaseDataVariableType
   DataType: UInt16
@@ -13,6 +13,7 @@ Children:
 - Name: PLCAddress
   Type: BaseDataVariableType
   DataType: String
+  Value: "AUTHENTIQUE-PAR"
 - Name: Timeout
   Type: BaseDataVariableType
   DataType: Duration
