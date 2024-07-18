@@ -1712,7 +1712,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../../../Model/Variable1"
+          Value: "../../../../../Model/UnitàMisuraTemp"
           Children:
           - Name: Mode
             Type: BaseVariableType

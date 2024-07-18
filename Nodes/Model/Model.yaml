@@ -12,3 +12,6 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: true
+- Name: UnitàMisuraTemp
+  Type: BaseDataVariableType
+  DataType: Int32
