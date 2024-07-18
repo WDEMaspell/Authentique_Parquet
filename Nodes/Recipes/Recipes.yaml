@@ -139,15 +139,6 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-  - Name: Store
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/Authentique_Parquet/DataStores/EmbeddedDatabase1"
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: EditModel
     Id: g=a6c00c4c6b740dfac94ca0bf7fb133b6
     Type: BaseObjectType
@@ -239,3 +230,12 @@ Children:
     - Name: GradientTemperatureSet
       Type: BaseDataVariableType
       DataType: Float
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Authentique_Parquet/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"

@@ -124,15 +124,15 @@ Project:
    Module: FTOptix.DataLogger.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 5352
-  Objects: 748
+  TotalNodeCount: 5350
+  Objects: 747
   ObjectTypes: 10
-  Variables: 4584
+  Variables: 4583
   VariableTypes: 0
   DataTypes: 0
   Methods: 10
   References: 233
   ReferenceTypes: 0
-  Files: 33
+  Files: 32
  Nodes:
  - File: Nodes/Authentique_Parquet.yaml
