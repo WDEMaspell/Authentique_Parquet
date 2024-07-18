@@ -14,9 +14,6 @@ Children:
     - Name: EssCooling_Time_Set
       Type: BaseDataVariableType
       DataType: Duration
-    - Name: EssCooling_Time_Set_Min
-      Type: BaseDataVariableType
-      DataType: Duration
     - Name: EssPh1_Humidity_Set
       Type: BaseDataVariableType
       DataType: Int16
@@ -90,9 +87,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Int16
     - Name: EssPreH_Time_Set
-      Type: BaseDataVariableType
-      DataType: Duration
-    - Name: EssPreH_Time_Set_Min
       Type: BaseDataVariableType
       DataType: Duration
     - Name: FinalHumiditySet
@@ -146,15 +140,13 @@ Children:
       Type: PropertyType
       DataType: NodeId
   - Name: EditModel
+    Id: g=a6c00c4c6b740dfac94ca0bf7fb133b6
     Type: BaseObjectType
     Children:
     - Name: DescrEss
       Type: BaseDataVariableType
       DataType: String
     - Name: EssCooling_Time_Set
-      Type: BaseDataVariableType
-      DataType: Duration
-    - Name: EssCooling_Time_Set_Min
       Type: BaseDataVariableType
       DataType: Duration
     - Name: EssPh1_Humidity_Set
@@ -230,9 +222,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Int16
     - Name: EssPreH_Time_Set
-      Type: BaseDataVariableType
-      DataType: Duration
-    - Name: EssPreH_Time_Set_Min
       Type: BaseDataVariableType
       DataType: Duration
     - Name: FinalHumiditySet

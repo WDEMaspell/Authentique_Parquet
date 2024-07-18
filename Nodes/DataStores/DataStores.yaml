@@ -414,9 +414,6 @@ Children:
         - Name: /EssCooling_Time_Set
           Type: StoreColumn
           DataType: Duration
-        - Name: /EssCooling_Time_Set_Min
-          Type: StoreColumn
-          DataType: Duration
         - Name: /EssPh1_Humidity_Set
           Type: StoreColumn
           DataType: Int16
@@ -490,9 +487,6 @@ Children:
           Type: StoreColumn
           DataType: Int16
         - Name: /EssPreH_Time_Set
-          Type: StoreColumn
-          DataType: Duration
-        - Name: /EssPreH_Time_Set_Min
           Type: StoreColumn
           DataType: Duration
         - Name: /FinalHumiditySet
