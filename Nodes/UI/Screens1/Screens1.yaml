@@ -8448,7 +8448,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"DescrEss"}
+              Value: {"LocaleId":"fr-FR","Text":"DescrEss"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -8515,7 +8515,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 285.0
+              Value: 100.0
         - Name: EssCooling_Time_Set
           Type: Panel
           Children:
@@ -8536,7 +8536,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssCooling_Time_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssCooling_Time_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -8624,7 +8624,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssCooling_Time_Set_Min"}
+              Value: {"LocaleId":"fr-FR","Text":"EssCooling_Time_Set_Min"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -8712,7 +8712,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh1_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh1_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -8805,7 +8805,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh1_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh1_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -8898,7 +8898,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh1_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh1_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -8991,7 +8991,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh2_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh2_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9084,7 +9084,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh2_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh2_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9177,7 +9177,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh2_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh2_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9270,7 +9270,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh3_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh3_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9363,7 +9363,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh3_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh3_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9456,7 +9456,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh3_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh3_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9549,7 +9549,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh4_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh4_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9642,7 +9642,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh4_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh4_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9735,7 +9735,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh4_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh4_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9828,7 +9828,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh5_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh5_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -9921,7 +9921,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh5_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh5_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10014,7 +10014,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh5_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh5_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10107,7 +10107,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh6_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh6_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10200,7 +10200,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh6_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh6_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10293,7 +10293,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh6_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh6_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10386,7 +10386,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh7_Humidity_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh7_Humidity_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10479,7 +10479,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh7_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh7_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10572,7 +10572,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh7_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh7_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10665,7 +10665,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh8_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh8_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10758,7 +10758,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPh8_Temperature_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPh8_Temperature_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10851,7 +10851,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPreH_Pressure_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPreH_Pressure_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -10944,7 +10944,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPreH_Time_Set"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPreH_Time_Set"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -11032,7 +11032,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"EssPreH_Time_Set_Min"}
+              Value: {"LocaleId":"fr-FR","Text":"EssPreH_Time_Set_Min"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -11120,7 +11120,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"FinalHumiditySet"}
+              Value: {"LocaleId":"fr-FR","Text":"FinalHumiditySet"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -11213,7 +11213,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"it-IT","Text":"GradientTemperatureSet"}
+              Value: {"LocaleId":"fr-FR","Text":"GradientTemperatureSet"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -11339,7 +11339,7 @@ Children:
       - Name: CSVFile
         Type: BaseDataVariableType
         DataType: AbsoluteResourceUri
-        Value: "file:///C:/Users/WDE Maspell/Desktop/Ricette per pannello.csv"
+        Value: "file:///C:/Users/AlessandroBiferni-WD/OneDrive - WDE MASPELL SRL/Desktop/Ricette per pannello7.csv"
       - Name: CSVSeparator
         Type: BaseDataVariableType
         DataType: String

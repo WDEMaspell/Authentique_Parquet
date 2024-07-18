@@ -1,6 +1,0 @@
-Name: VARIABILI RICETTA
-Type: FolderType
-Children:
-- Name: Descrizione ricetta
-  Type: BaseDataVariableType
-  DataType: Int32
