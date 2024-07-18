@@ -1965,6 +1965,21 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: ContentType
+      Type: BaseVariableType
+      DataType: InputTypeEnum
+    - Name: PlaceholderText
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+    - Name: FontItalic
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
   - Name: TextBox2
     Type: TextBox
     Children:
@@ -2016,7 +2031,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: -91.0
+      Value: -90.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -2068,6 +2083,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+    - Name: ValueChangeBehaviour
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
   - Name: TextBox3
     Type: TextBox
     Children:
@@ -2633,6 +2652,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 15.0
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkDryerInManual"
 - Name: Alarms
   Id: g=842fa1791053376c84e40fb410a15753
   Supertype: Screen
