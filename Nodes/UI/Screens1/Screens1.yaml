@@ -9483,6 +9483,11 @@ Children:
               DataType: String
               ModellingRule: Optional
               Value: "n0"
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 140.0
         - Name: EssPh3_Humidity_Set
           Type: Panel
           Children:
@@ -11572,7 +11577,7 @@ Children:
       - Name: CSVFile
         Type: BaseDataVariableType
         DataType: AbsoluteResourceUri
-        Value: "file:///C:/Users/AlessandroBiferni-WD/OneDrive - WDE MASPELL SRL/Desktop/Ricette per pannello7.csv"
+        Value: "file:///C:/Users/WDE Maspell/Desktop/Ricette/ric-1.csv"
       - Name: CSVSeparator
         Type: BaseDataVariableType
         DataType: String
