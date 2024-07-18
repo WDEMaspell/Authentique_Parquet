@@ -146,7 +146,6 @@ Children:
       Type: PropertyType
       DataType: NodeId
   - Name: EditModel
-    Id: g=577944e4979ccf7a175ac6b39c2480c2
     Type: BaseObjectType
     Children:
     - Name: DescrEss

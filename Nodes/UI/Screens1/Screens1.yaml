@@ -1235,6 +1235,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+        Value: -1.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -1278,6 +1279,15 @@ Children:
         DataType: Boolean
         ModellingRule: Optional
         Value: true
+      - Name: ValueChangeBehaviour
+        Type: BaseDataVariableType
+        DataType: ValueChangeBehaviour
+        ModellingRule: Optional
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Default"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -1388,60 +1398,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 15.0
-    - Name: Label2
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"NamespaceIndex":28,"TextId":"Probe 1 :"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
-    - Name: Label3
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"NamespaceIndex":28,"TextId":"Probe 2 :"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 70.0
-    - Name: Label4
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"NamespaceIndex":28,"TextId":"Probe 3 :"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
     - Name: Label5
       Type: Label
       Children:
@@ -1813,6 +1769,102 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 80.0
+    - Name: ToggleButton1
+      Type: ToggleButton
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkPnlActHumProbe1"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":28,"TextId":"Probe 1 :"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+    - Name: ToggleButton2
+      Type: ToggleButton
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkPnlActHumProbe2"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":28,"TextId":"Probe 2 :"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 69.0
+    - Name: ToggleButton3
+      Type: ToggleButton
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkPnlActHumProbe3"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":28,"TextId":"Probe 3 :"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 98.0
 - Name: ManualCommand
   Id: g=eb9cac19ecbdda707f877174a177ae07
   Supertype: Screen
@@ -3747,7 +3799,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Model/VariablesToLog/REAL_DOOR_LEFT_TEMPERATURE/LastValue"
+          Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_DOOR_LEFT_TEMPERATURE"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -3908,7 +3960,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:02:0.0000000"
+        Value: "0:00:05:0.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -3957,7 +4009,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 400.0
+      Value: 370.0
     - Name: ReferenceTimeZone
       Type: BaseDataVariableType
       DataType: ReferenceTimeZone
@@ -3984,6 +4036,48 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
+    - Name: RefreshTime
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ModellingRule: Optional
+      Value: 2000
+  - Name: TextBox1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Trend1/XAxis/Window"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 350.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 428.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
 - Name: HumidityGraphic
   Id: g=029f5b5025ca5a2804f7c1037ea8fb4d
   Supertype: Screen
@@ -4170,7 +4264,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 400.0
+      Value: 380.0
     - Name: ReferenceTimeZone
       Type: BaseDataVariableType
       DataType: ReferenceTimeZone
@@ -4197,6 +4291,43 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
+  - Name: TextBox1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Trend1/XAxis/Window"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 69.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 361.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 438.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
 - Name: HumidityDryingProgram
   Id: g=df0874fd78265e76402d86b84bc69933
   Supertype: Screen
@@ -4312,6 +4443,17 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/DescrEss"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -4327,6 +4469,10 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 10.0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
   - Name: Label3
     Type: Label
     Children:
@@ -4463,6 +4609,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 8.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: TextBox3
     Type: TextBox
     Children:
@@ -4495,6 +4646,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 8.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: Label6
     Type: Label
     Children:
@@ -5789,14 +5945,34 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssPrehActualTemperSet"
+      - Name: StringFormatter1
+        Type: StringFormatter
         Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:f1}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssPrehActualTemperSet"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Mode
-          Type: BaseVariableType
+          Type: PropertyType
           DataType: DynamicLinkMode
+          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
     - Name: Width
@@ -6636,7 +6812,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssPreH_Time_Set_Min"
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssPreH_Time_Set"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -6647,12 +6823,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 60.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 190.0
+      Value: 180.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -6678,7 +6854,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssCooling_Time_Set_Min"
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssCooling_Time_Set"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -6689,12 +6865,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 59.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 680.0
+      Value: 670.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -6717,14 +6893,34 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssPreH_Time_Count"
+      - Name: StringFormatter1
+        Type: StringFormatter
         Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:c}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssPreH_Time_Count"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Mode
-          Type: BaseVariableType
+          Type: PropertyType
           DataType: DynamicLinkMode
+          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
     - Name: Width
@@ -6759,14 +6955,34 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssCooling_Time_Count"
+      - Name: StringFormatter1
+        Type: StringFormatter
         Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:c}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/EssCooling_Time_Count"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Mode
-          Type: BaseVariableType
+          Type: PropertyType
           DataType: DynamicLinkMode
+          ReferenceType: HasComponent
           ModellingRule: Optional
           Value: 2
     - Name: Width
@@ -7240,6 +7456,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
   - Name: TextBox40
     Type: TextBox
     Children:
@@ -7433,118 +7654,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkDryerInManual"
-  - Name: ToggleButton1
-    Type: ToggleButton
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdAcknowlEssCycleEnd"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"NamespaceIndex":28,"TextId":"CYCLE COMPLETED: CONFIRM THE END OF THE CYCLE."}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 342.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 420.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 188.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 40.0
-    - Name: WordWrap
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssCycleEnd"
-  - Name: ToggleButton2
-    Type: ToggleButton
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdConfirmEssCycleStop"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"NamespaceIndex":28,"TextId":"CYCLE PAUSE: PRESS TO END THE CYCLE."}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 550.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 420.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 188.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 40.0
-    - Name: WordWrap
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssCycleEnd"
   - Name: Label19
     Type: Label
     Children:
@@ -7690,6 +7799,130 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 10.0
+  - Name: MomentaryButton1
+    Type: MomentaryButton
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdAcknowlEssCycleEnd"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":28,"TextId":"CYCLE COMPLETED: CONFIRM THE END OF THE CYCLE."}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 340.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 420.0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssCycleEnd"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 190.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: MinHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:0.5000000"
+  - Name: MomentaryButton2
+    Type: MomentaryButton
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdConfirmEssCycleStop"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":28,"TextId":"CYCLE PAUSE: PRESS TO END THE CYCLE."}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 419.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 190.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 41.0
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssStopOn"
+    - Name: MinHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:0.5000000"
 - Name: Ricette
   Id: g=176033f7cae46daa5c7cec561d192ed7
   Supertype: Screen
@@ -14669,7 +14902,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Time_condenser_disch_valve_open"
+        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Time_dryer_disch_valve_open"
         Children:
         - Name: Mode
           Type: BaseVariableType
