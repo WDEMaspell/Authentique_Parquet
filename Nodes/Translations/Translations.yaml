@@ -253,7 +253,7 @@ Children:
      "Average humidity","Average humidity","Umidità media ","humidité moyenne","gemiddelde MC","humedad media",
      "Dryer back temperature:","Dryer back temperature:","Temperatura fondo ess. :","Température fond sèchoir :","Droger bodemtemperatuur:","Temperatura  fondo  secadora:",
      "Dryer door temperature:","","Temperatura porta ess. :","Température porte sèchoir :","Temperatuur drogerdeur:","Temperatura  puerta  secadora:",
-     "Humidity :","Humidity :","Umidità","Humidité","Vochtigheid","Humedad",
+     "Humidity :","Humidity (%) :","Umidità (%) :","Humidité (%) :","Vochtigheid (%) :","Humedad",
      "Humidity probe 1","Humidity probe 1","Sonda umidità 1","sonde d'humidité 1","vochtigheidssonde 1","sonda de humedad 1",
      "Humidity probe 2","Humidity probe 2","Sonda umidità 2","sonde d'humidité 2","vochtigheidssonde 2","sonda de humedad 2",
      "Humidity probe 3","Humidity probe 3","Sonda umidità 3","sonde d'humidité 3","vochtigheidssonde 3","sonda de humedad 3",
