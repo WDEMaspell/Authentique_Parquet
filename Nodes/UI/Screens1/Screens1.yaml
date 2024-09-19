@@ -4466,38 +4466,6 @@ Children:
     DataType: Color
     ModellingRule: Optional
     Value: "#f0f0f0"
-  - Name: Switch1
-    Type: Switch
-    Children:
-    - Name: Checked
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Authentique_Parquet/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllEmergencyButton"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 60.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 80.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 433.0
 - Name: DryingGraphic
   Id: g=0c7d5fb64642429de350a5b613f208e0
   Supertype: Screen
@@ -4702,7 +4670,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:05:0.0000000"
+        Value: "0:00:24:0.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -4956,7 +4924,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:5.0000000"
+        Value: "0:00:24:0.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -8494,7 +8462,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 189.0
+      Value: 199.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
