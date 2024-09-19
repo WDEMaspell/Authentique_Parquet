@@ -9795,6 +9795,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
+          Value: -170.0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
@@ -10258,6 +10259,11 @@ Children:
               DataType: String
               ModellingRule: Optional
               Value: "n0"
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
         - Name: EssPh2_Humidity_Set
           Type: Panel
           Children:
@@ -10351,6 +10357,10 @@ Children:
               DataType: String
               ModellingRule: Optional
               Value: "n0"
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
         - Name: EssPh2_Pressure_Set
           Type: Panel
           Children:
@@ -10541,7 +10551,6 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 140.0
         - Name: EssPh3_Humidity_Set
           Type: Panel
           Children:
@@ -12543,7 +12552,7 @@ Children:
       - Name: CSVFile
         Type: BaseDataVariableType
         DataType: AbsoluteResourceUri
-        Value: "file:///C:/Users/WDE Maspell/Desktop/Ricette/ric-1.csv"
+        Value: "file:///C:/Users/AlessandroBiferni-WD/OneDrive - WDE MASPELL SRL/Desktop/Ricette per pannello7.csv"
       - Name: CSVSeparator
         Type: BaseDataVariableType
         DataType: String
